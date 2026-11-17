@@ -92,6 +92,7 @@ fun GlobalScreen(
 
     BoxWithConstraints(modifier) {
         val wide = maxWidth > maxHeight
+        val controlsWidth = maxWidth * 0.42f
 
         val controls: @Composable (Modifier) -> Unit = { m ->
             Column(
@@ -207,7 +208,7 @@ fun GlobalScreen(
 
         if (wide) {
             Row(Modifier.fillMaxSize(), horizontalArrangement = Arrangement.spacedBy(16.dp)) {
-                controls(Modifier.width(maxWidth * 0.42f).fillMaxHeight())
+                controls(Modifier.width(controlsWidth).fillMaxHeight())
                 grid(Modifier.weight(1f).fillMaxHeight())
             }
         } else {
