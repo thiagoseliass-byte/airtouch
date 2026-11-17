@@ -1,4 +1,0 @@
-<resources>
-    <string name="app_name">AIR TOUCH</string>
-    <string name="accessibility_description">Permite que o AIR TOUCH execute toques, rolagem, arrastar e os botões Voltar/Início em outros aplicativos a partir dos gestos das suas mãos captados pela câmera. A imagem é processada somente no aparelho e nunca é gravada nem enviada.</string>
-</resources>
